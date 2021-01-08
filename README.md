@@ -58,10 +58,13 @@ It will be created by the library automatically if it doesn't exist. It is
 highly recommended to put a call to `sleep` to ease the system load.
 
 ### Daemon::kill($pid, $force = false, $delete = false)
+
 ####$force
+
 The value of force is `true`, the sig is `SIGKILL`
 
 The value of force is `false`, the sig is `SIGTERM`
+
 ####$delete
 Flag to delete PID file after killing
 

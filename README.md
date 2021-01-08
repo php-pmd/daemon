@@ -59,13 +59,13 @@ highly recommended to put a call to `sleep` to ease the system load.
 
 ### Daemon::kill($pid, $force = false, $delete = false)
 
-####$force
+#### $force
 
 The value of force is `true`, the sig is `SIGKILL`
 
 The value of force is `false`, the sig is `SIGTERM`
 
-####$delete
+#### $delete
 Flag to delete PID file after killing
 
 Kill a daemonized process:

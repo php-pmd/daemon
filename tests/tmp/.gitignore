@@ -1,0 +1,4 @@
+!.gitignore
+process.pid
+stderr.txt
+stdout.txt

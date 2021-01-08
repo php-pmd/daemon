@@ -1,0 +1,30 @@
+{
+  "name": "php-pmd/daemon",
+  "description": "Lightweight utility and helper classes for CLI applications(clio/clio)",
+  "keywords": [
+    "cli",
+    "php",
+    "clio",
+    "daemon"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "imparting",
+      "email": "1035758885@qq.com",
+      "homepage": "https://github.com/php-pmd/pmd",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2",
+    "ext-pcntl": "*",
+    "ext-posix": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpPmd\\": "src"
+    }
+  }
+}

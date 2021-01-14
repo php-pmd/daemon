@@ -1,6 +1,6 @@
 {
   "name": "php-pmd/daemon",
-  "description": "Lightweight utility and helper classes for CLI applications(clio/clio)",
+  "description": "PHP CLI daemon(clio/clio)",
   "keywords": [
     "cli",
     "php",

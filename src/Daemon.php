@@ -14,11 +14,12 @@ class Daemon
      *
      * @param array $options Set of options
      * @param callable $callable Closure object to daemonize
+     * @param mixed ...$args
      *
      * @throws \Exception
      *
      */
-    public static function work(array $options, callable $callable)
+    public static function work(array $options, callable $callable, ...$args)
     {
         if (!isset($options['pid'])) {
             throw new \Exception('pid not specified');
@@ -76,7 +77,7 @@ class Daemon
         pcntl_signal(SIGTTIN, SIG_IGN);
         pcntl_signal(SIGHUP, SIG_IGN);
 
-        call_user_func($callable, $stdin, $stdout, $stderr);
+        call_user_func($callable, $stdin, $stdout, $stderr, ...$args);
     }
 
     /**

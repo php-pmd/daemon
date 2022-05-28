@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpPmd;
+namespace Hippo\Daemon;
 /**
  * This file is part of clio/clio.
  *

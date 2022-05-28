@@ -1,5 +1,5 @@
 {
-  "name": "php-pmd/daemon",
+  "name": "hippo/daemon",
   "description": "PHP CLI daemon(clio/clio)",
   "keywords": [
     "cli",
@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "PhpPmd\\": "src"
+      "Hippo\\Daemon\\": "src"
     }
   }
 }
